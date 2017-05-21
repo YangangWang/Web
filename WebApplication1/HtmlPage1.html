@@ -5,13 +5,19 @@
     <title></title>
 	<meta charset="utf-8" />
     <script>
-        
+        function GetType() {
+            x = 123;
+            
+            console.log((x).toExponential());
+            var x;
+        }
     </script>
 
 </head>
 <body id="bd1">
    <label id="lb1" onclick="getElementById('lb1').innerHTML=Date()">click me</label><br />
     <button id="btn1" onclick="this.innerHTML = Date()">time is</button><br />
+    <button id="btn2" onclick="GetType()">getTypeOf</button>
 </body>
 </html>
 
